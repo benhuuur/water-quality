@@ -3,7 +3,7 @@ from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
 
-df = pd.read_csv(r"data\water_potability_imputed.csv")
+df = pd.read_csv(r"water-quality\data\processed\water_potability_imputed.csv")
 
 X = df.drop("Potability", axis=1)
 y = df["Potability"]
